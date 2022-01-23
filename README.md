@@ -10,4 +10,4 @@ docker-compose up --build
 
 ### API Documentation
 
-jubelio.postman_collection.json available on the repo. Just load to the postman.
+postman_collection.json available on the repo. Just load to the postman.
