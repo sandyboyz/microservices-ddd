@@ -1,0 +1,1308 @@
+{
+	"info": {
+		"_postman_id": "30f9056e-a1fb-4987-8fa9-cbef30644349",
+		"name": "jubelio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Retrieve Product List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/products?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/products?page=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 02:08:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"totalData\": \"21\",\n    \"page\": 1,\n    \"totalPage\": 3,\n    \"data\": [\n        {\n            \"id\": \"6966052b-371c-48a7-b2bc-e9ebcd593985\",\n            \"name\": \"Baseus Cable 1 Meter Micro USB\",\n            \"sku\": \"BS010\",\n            \"image\": \"\",\n            \"price\": 5000,\n            \"stock\": 9,\n            \"createdAt\": \"2022-01-22T23:54:48.369Z\",\n            \"updatedAt\": \"2022-01-22T23:54:48.369Z\"\n        },\n        {\n            \"id\": \"b245f661-e73b-4a20-8203-64088ad521a5\",\n            \"name\": \"222 - Black-1112\",\n            \"sku\": \"16LSOL-M0901001/M\",\n            \"image\": \"\",\n            \"price\": 100000,\n            \"stock\": 18,\n            \"createdAt\": \"2022-01-22T23:54:48.374Z\",\n            \"updatedAt\": \"2022-01-22T23:54:48.374Z\"\n        },\n        {\n            \"id\": \"9ba052da-fe6b-4fef-80f4-7193bfc99bb1\",\n            \"name\": \"Baju Magdalene\",\n            \"sku\": \"MAGDALENE_BLACK\",\n            \"image\": \"\",\n            \"price\": 89000,\n            \"stock\": 8,\n            \"createdAt\": \"2022-01-22T23:54:48.379Z\",\n            \"updatedAt\": \"2022-01-22T23:54:48.379Z\"\n        },\n        {\n            \"id\": \"371171dc-3b47-468c-9a80-5649ba0927dc\",\n            \"name\": \"TORU Motomo Aluminium Case for iPhone 6 Plus - Silver\",\n            \"sku\": \"TORU02\",\n            \"image\": \"\",\n            \"price\": 200000,\n            \"stock\": 6,\n            \"createdAt\": \"2022-01-22T23:54:48.384Z\",\n            \"updatedAt\": \"2022-01-22T23:54:48.384Z\"\n        },\n        {\n            \"id\": \"c1e2f8be-9907-477f-8a17-f765225e0e07\",\n            \"name\": \"TORU Motomo Aluminium Case for iPhone 6 Plus - Dark Blue\",\n            \"sku\": \"TORU01\",\n            \"image\": \"\",\n            \"price\": 200000,\n            \"stock\": 12,\n            \"createdAt\": \"2022-01-22T23:54:48.389Z\",\n            \"updatedAt\": \"2022-01-22T23:54:48.389Z\"\n        },\n        {\n            \"id\": \"9ba7c471-789f-4eef-a5bb-c2ded3768f6a\",\n            \"name\": \"Tas selempang Biru Dongker\",\n            \"sku\": \"1203578196\",\n            \"image\": \"\",\n            \"price\": 30000,\n            \"stock\": 16,\n            \"createdAt\": \"2022-01-22T23:54:48.394Z\",\n            \"updatedAt\": \"2022-01-22T23:54:48.394Z\"\n        },\n        {\n            \"id\": \"cedfb19c-c779-4205-ab38-81f4827081db\",\n            \"name\": \"SGP Neo Hybrid Ex Plastic Case for iPhone 6 Plus - Magenta\",\n            \"sku\": \"SPGN01\",\n            \"image\": \"\",\n            \"price\": 200000,\n            \"stock\": 6,\n            \"createdAt\": \"2022-01-22T23:54:48.424Z\",\n            \"updatedAt\": \"2022-01-22T23:54:48.424Z\"\n        },\n        {\n            \"id\": \"bbf56e7a-0fc2-4962-b0e7-7cddff9392ff\",\n            \"name\": \"test el6\",\n            \"sku\": \"tes-el6-Hit\",\n            \"image\": \"\",\n            \"price\": 1000000,\n            \"stock\": 18,\n            \"createdAt\": \"2022-01-22T23:54:48.440Z\",\n            \"updatedAt\": \"2022-01-22T23:54:48.440Z\"\n        },\n        {\n            \"id\": \"fcd21566-73e7-42d0-b329-c14d8952d312\",\n            \"name\": \"SGP Neo Hybrid Ex Plastic Case for iPhone 6 Plus - Gold\",\n            \"sku\": \"SPGN02\",\n            \"image\": \"\",\n            \"price\": 200000,\n            \"stock\": 14,\n            \"createdAt\": \"2022-01-22T23:54:48.449Z\",\n            \"updatedAt\": \"2022-01-22T23:54:48.449Z\"\n        },\n        {\n            \"id\": \"29045e98-dcc3-404e-8f0d-cd35305778f0\",\n            \"name\": \"SPG Full Armor Case for iphone 6 plus\",\n            \"sku\": \"SPG04\",\n            \"image\": \"\",\n            \"price\": 200000,\n            \"stock\": 13,\n            \"createdAt\": \"2022-01-22T23:54:48.459Z\",\n            \"updatedAt\": \"2022-01-22T23:54:48.459Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Retrieve Product By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/products/14e7c40a-d90e-4cd9-ab7b-97ab7641c67e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products",
+								"14e7c40a-d90e-4cd9-ab7b-97ab7641c67e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/products/6966052b-371c-48a7-b2bc-e9ebcd593985",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"6966052b-371c-48a7-b2bc-e9ebcd593985"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "221"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 02:09:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"6966052b-371c-48a7-b2bc-e9ebcd593985\",\n        \"name\": \"Baseus Cable 1 Meter Micro USB\",\n        \"sku\": \"BS010\",\n        \"image\": \"\",\n        \"price\": 5000,\n        \"stock\": 12,\n        \"createdAt\": \"2022-01-22T23:54:48.369Z\",\n        \"updatedAt\": \"2022-01-22T23:54:48.369Z\"\n    }\n}"
+						},
+						{
+							"name": "Product Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/products/6966052b-371c-48a7-b2bc-e9ebcd593983",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"6966052b-371c-48a7-b2bc-e9ebcd593983"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "75"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 02:09:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product id 6966052b-371c-48a7-b2bc-e9ebcd593983 was not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nutrisari\",\r\n    \"sku\": \"NSR0001\",\r\n    \"image\": \"nutrisari.jpg\",\r\n    \"price\": 5000,\r\n    \"description\": \"Minuman murah meriah\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Nutrisari\",\r\n    \"sku\": \"NSR0001\",\r\n    \"image\": \"nutrisari.jpg\",\r\n    \"price\": 5000,\r\n    \"description\": \"Minuman murah meriah\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "241"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 02:11:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"c2505d52-efc9-4266-923e-1b49fd833eb2\",\n        \"name\": \"Nutrisari\",\n        \"sku\": \"NSR0001\",\n        \"image\": \"nutrisari.jpg\",\n        \"price\": 5000,\n        \"description\": \"Minuman murah meriah\",\n        \"createdAt\": \"2022-01-23T02:11:30.548Z\",\n        \"updatedAt\": \"2022-01-23T02:11:30.548Z\"\n    }\n}"
+						},
+						{
+							"name": "SKU Already Exists",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Nutrisari\",\r\n    \"sku\": \"NSR0001\",\r\n    \"image\": \"nutrisari.jpg\",\r\n    \"price\": 5000,\r\n    \"description\": \"Minuman murah meriah\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Conflict",
+							"code": 409,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "44"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 02:11:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"SKU NSR0001 was already exists\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nutrisari New\",\r\n    \"sku\": \"AEROI\",\r\n    \"image\": \"nutrisari.jpg\",\r\n    \"price\": 5000,\r\n    \"description\": \"Minuman murah meriah\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/products/12534e1a-8a86-470a-ba29-bcde58b4c791",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products",
+								"12534e1a-8a86-470a-ba29-bcde58b4c791"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Nutrisari New\",\r\n    \"sku\": \"NSR0001\",\r\n    \"image\": \"nutrisari.jpg\",\r\n    \"price\": 5000,\r\n    \"description\": \"Minuman murah meriah\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/products/c2505d52-efc9-4266-923e-1b49fd833eb2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"c2505d52-efc9-4266-923e-1b49fd833eb2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "245"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 02:12:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"c2505d52-efc9-4266-923e-1b49fd833eb2\",\n        \"name\": \"Nutrisari New\",\n        \"sku\": \"NSR0001\",\n        \"image\": \"nutrisari.jpg\",\n        \"price\": 5000,\n        \"description\": \"Minuman murah meriah\",\n        \"createdAt\": \"2022-01-23T02:11:30.549Z\",\n        \"updatedAt\": \"2022-01-23T02:11:30.549Z\"\n    }\n}"
+						},
+						{
+							"name": "Product Not Found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Nutrisari New\",\r\n    \"sku\": \"NSR0001\",\r\n    \"image\": \"nutrisari.jpg\",\r\n    \"price\": 5000,\r\n    \"description\": \"Minuman murah meriah\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/products/c2505d52-efc9-4266-923e-1b49fd833eb1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"c2505d52-efc9-4266-923e-1b49fd833eb1"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "72"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 02:12:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product c2505d52-efc9-4266-923e-1b49fd833eb1 was not found\"\n}"
+						},
+						{
+							"name": "SKU Already Exists",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Nutrisari New\",\r\n    \"sku\": \"BLACK\",\r\n    \"image\": \"nutrisari.jpg\",\r\n    \"price\": 5000,\r\n    \"description\": \"Minuman murah meriah\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/products/c2505d52-efc9-4266-923e-1b49fd833eb2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"c2505d52-efc9-4266-923e-1b49fd833eb2"
+									]
+								}
+							},
+							"status": "Conflict",
+							"code": 409,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "42"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 02:13:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"SKU BLACK was already exists\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/products/12534e1a-8a86-470a-ba29-bcde58b4c791",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products",
+								"12534e1a-8a86-470a-ba29-bcde58b4c791"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/products/c2505d52-efc9-4266-923e-1b49fd833eb2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"c2505d52-efc9-4266-923e-1b49fd833eb2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "241"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 02:14:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"c2505d52-efc9-4266-923e-1b49fd833eb2\",\n        \"name\": \"Nutrisari New\",\n        \"sku\": \"abc\",\n        \"image\": \"nutrisari.jpg\",\n        \"price\": 5000,\n        \"description\": \"Minuman murah meriah\",\n        \"createdAt\": \"2022-01-23T02:11:30.549Z\",\n        \"updatedAt\": \"2022-01-23T02:11:30.549Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Initial Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/products/init",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products",
+								"init"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Retrieve Transaction List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/transactions?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4001/transactions?page=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"transactions"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "vary",
+									"value": "accept-encoding"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 04:07:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"totalData\": \"18\",\n    \"page\": 1,\n    \"totalPage\": 2,\n    \"data\": [\n        {\n            \"id\": \"e5f07b07-e049-4fd8-8933-81a11b46ec41\",\n            \"sku\": \"TORU02\",\n            \"quantity\": 100,\n            \"amount\": 20000000,\n            \"createdAt\": \"2022-01-23T02:32:43.847Z\"\n        },\n        {\n            \"id\": \"96d6d6c6-86b1-4a80-8b61-6f605a0ef9af\",\n            \"sku\": \"TORU01\",\n            \"quantity\": 100,\n            \"amount\": 20000000,\n            \"createdAt\": \"2022-01-23T02:32:43.862Z\"\n        },\n        {\n            \"id\": \"80929bf9-31f8-4ba2-ae95-a8b99e7d4c88\",\n            \"sku\": \"1203578196\",\n            \"quantity\": 10,\n            \"amount\": 300000,\n            \"createdAt\": \"2022-01-23T02:32:43.876Z\"\n        },\n        {\n            \"id\": \"3819ef45-61a9-4b1c-822d-f894b5a9e5da\",\n            \"sku\": \"SPGN01\",\n            \"quantity\": 97,\n            \"amount\": 19400000,\n            \"createdAt\": \"2022-01-23T02:32:43.887Z\"\n        },\n        {\n            \"id\": \"682e935a-2829-4e55-a4a4-b37238558adf\",\n            \"sku\": \"tes-el6-Hit\",\n            \"quantity\": 0,\n            \"amount\": 0,\n            \"createdAt\": \"2022-01-23T02:32:43.896Z\"\n        },\n        {\n            \"id\": \"7455a777-e3bd-46ad-aef9-52bd3d5c76b7\",\n            \"sku\": \"SPGN02\",\n            \"quantity\": 112,\n            \"amount\": 22400000,\n            \"createdAt\": \"2022-01-23T02:32:43.910Z\"\n        },\n        {\n            \"id\": \"1897f108-61cc-484b-af34-d74fc13f163d\",\n            \"sku\": \"SPG04\",\n            \"quantity\": 395,\n            \"amount\": 79000000,\n            \"createdAt\": \"2022-01-23T02:32:43.922Z\"\n        },\n        {\n            \"id\": \"e3003abd-57e7-4c55-87a0-9448c6d7df67\",\n            \"sku\": \"test el4\",\n            \"quantity\": 10,\n            \"amount\": 10000000,\n            \"createdAt\": \"2022-01-23T02:32:43.933Z\"\n        },\n        {\n            \"id\": \"d2a462d9-07dd-4fb8-80ee-1102eae53baf\",\n            \"sku\": \"HPET02\",\n            \"quantity\": 2,\n            \"amount\": 300000,\n            \"createdAt\": \"2022-01-23T02:32:43.947Z\"\n        },\n        {\n            \"id\": \"4448bed3-6ee2-44b9-8bda-3379759f0a95\",\n            \"sku\": \"1609397612\",\n            \"quantity\": 20,\n            \"amount\": 20000000,\n            \"createdAt\": \"2022-01-23T02:32:43.957Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Retrieve Transaction By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/transactions/e5f07b07-e049-4fd8-8933-81a11b46ec41",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"transactions",
+								"e5f07b07-e049-4fd8-8933-81a11b46ec41"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4001/transactions/e5f07b07-e049-4fd8-8933-81a11b46ec41",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"transactions",
+										"e5f07b07-e049-4fd8-8933-81a11b46ec41"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "141"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 04:09:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"e5f07b07-e049-4fd8-8933-81a11b46ec41\",\n        \"sku\": \"TORU02\",\n        \"quantity\": 100,\n        \"amount\": 20000000,\n        \"createdAt\": \"2022-01-23T02:32:43.847Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Retrieve Transaction By SKU",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/transactions/sku/TORU02",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"transactions",
+								"sku",
+								"TORU02"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Retrieve Transaction By SKU",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4001/transactions/sku/TORU02",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"transactions",
+										"sku",
+										"TORU02"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "125"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 04:11:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"e5f07b07-e049-4fd8-8933-81a11b46ec41\",\n            \"sku\": \"TORU02\",\n            \"quantity\": 100,\n            \"createdAt\": \"2022-01-23T02:32:43.847Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sku\": \"CD001\",\r\n    \"quantity\": -6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SKU Not Available",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sku\": \"BOBLOK\",\r\n    \"quantity\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/transactions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"transactions"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "42"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 04:14:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"SKU BOBLOK was not available\"\n}"
+						},
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sku\": \"CD001\",\r\n    \"quantity\": -8\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/transactions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"transactions"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "121"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 04:14:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"8975898d-de88-442e-a42f-bdc24990b470\",\n        \"sku\": \"CD001\",\n        \"quantity\": -8,\n        \"createdAt\": \"2022-01-23T04:14:49.745Z\"\n    }\n}"
+						},
+						{
+							"name": "Stock Not Avaliable",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sku\": \"CD001\",\r\n    \"quantity\": -6\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/transactions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"transactions"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "47"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 04:19:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"SKU CD001 stock was not available\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Transaction",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sku\": \"TORU02\",\r\n    \"quantity\": 66\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/transactions/e5f07b07-e049-4fd8-8933-81a11b46ec41",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"transactions",
+								"e5f07b07-e049-4fd8-8933-81a11b46ec41"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sku\": \"TORU02\",\r\n    \"quantity\": 66\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/transactions/e5f07b07-e049-4fd8-8933-81a11b46ec41",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"transactions",
+										"e5f07b07-e049-4fd8-8933-81a11b46ec41"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "122"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 04:20:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"e5f07b07-e049-4fd8-8933-81a11b46ec41\",\n        \"sku\": \"TORU02\",\n        \"quantity\": 66,\n        \"createdAt\": \"2022-01-23T02:32:43.847Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Transaction",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/transactions/e5f07b07-e049-4fd8-8933-81a11b46ec41",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"transactions",
+								"e5f07b07-e049-4fd8-8933-81a11b46ec41"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4001/transactions/e5f07b07-e049-4fd8-8933-81a11b46ec41",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"transactions",
+										"e5f07b07-e049-4fd8-8933-81a11b46ec41"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "122"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jan 2022 04:21:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"e5f07b07-e049-4fd8-8933-81a11b46ec41\",\n        \"sku\": \"TORU02\",\n        \"quantity\": 66,\n        \"createdAt\": \"2022-01-23T02:32:43.847Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

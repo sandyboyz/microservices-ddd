@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  product_service:
+    container_name: product_service
+    build:
+      context: ./product-service
+      dockerfile: Dockerfile
+    ports:
+      - 4000:4000
+    volumes:
+      - ./product-service/src:/home/node/app/src
+    depends_on:
+      - product_db
+  transaction_service:
+    container_name: transaction_service
+    build:
+      context: ./transaction-service
+      dockerfile: Dockerfile
+    ports:
+      - 4001:4000
+    volumes:
+      - ./transaction-service/src:/home/node/app/src
+    depends_on:
+      - transaction_db
+  product_db:
+    container_name: product_db
+    image: postgres:latest
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: product_db
+  transaction_db:
+    container_name: transaction_db
+    image: postgres:latest
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: transaction_db
+
